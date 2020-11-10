@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>password generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="fa fa-clipboard"></i>
+            </button>
+        </div>
+
+        <div class="settings">
+            <div class="setting">
+                <label for="length">password length</label>
+                <input type="number" id="length" min="5" max="15"/>
+            </div>
+            <div class="setting">
+                <label for="uppercase">include uppercase characters</label>
+                <input type="checkbox" id="uppercase" unchecked>
+            </div>
+            <div class="setting">
+                <label for="lowercase">include lowercase characters</label>
+                <input type="checkbox" id="lowercase" unchecked>
+            </div>
+            <div class="setting">
+                <label for="numbers">include numbers</label>
+                <input type="checkbox" id="numbers" unchecked>
+            </div>
+            <div class="setting">
+                <label for="symbols">include symbols</label>
+                <input type="checkbox" id="symbols" unchecked>
+            </div>
+        </div>
+        <button class="btn-large" id="generate_password">generate password</button>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
